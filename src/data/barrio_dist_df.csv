@@ -1,0 +1,129 @@
+barrio,distrito,codbar_1,codbar_2,codbar_3,codbar_4,codbar_5,coddistrit_1,coddistrit_2,coddistrit_3
+Ibiza,Retiro,1.0,0.0,-1.0,-1.0,-1.0,1.0,-1.0,-1.0
+Almagro,Chamberí,0.0,0.0,-1.0,0.0,-1.0,0.0,-1.0,0.0
+Valdefuentes,Hortaleza,2.0,0.0,-1.0,-1.0,-1.0,0.0,-2.0,0.0
+Sol,Centro,1.0,0.0,-1.0,-1.0,-1.0,0.0,-2.0,-1.0
+Universidad,Centro,1.0,0.0,-1.0,-1.0,-1.0,0.0,-2.0,-1.0
+Castellana,Salamanca,1.0,0.0,-1.0,-1.0,-1.0,0.0,-1.0,-2.0
+Nueva España,Chamartín,2.0,0.0,0.0,-1.0,-1.0,1.0,-1.0,-1.0
+El Viso,Chamartín,1.0,0.0,-1.0,-1.0,-1.0,1.0,-1.0,-1.0
+Peña Grande,Fuencarral - El Pardo,1.0,0.0,0.0,-2.0,-1.0,-1.0,-1.0,-1.0
+Trafalgar,Chamberí,1.0,0.0,0.0,0.0,-1.0,0.0,-1.0,0.0
+Vallehermoso,Chamberí,1.0,0.0,0.0,0.0,-1.0,0.0,-1.0,0.0
+Recoletos,Salamanca,0.0,0.0,-2.0,-1.0,-1.0,0.0,-1.0,-2.0
+Prosperidad,Chamartín,1.0,1.0,0.0,-1.0,-1.0,1.0,-1.0,-1.0
+Palacio,Centro,0.0,0.0,-2.0,-1.0,-1.0,0.0,-2.0,-1.0
+San Fermín,Usera,1.0,1.0,-1.0,-1.0,-1.0,1.0,-2.0,-1.0
+La Paz,Fuencarral - El Pardo,1.0,0.0,0.0,-2.0,-1.0,-1.0,-1.0,-1.0
+Delicias,Arganzuela,1.0,1.0,0.0,-1.0,-1.0,1.0,-1.0,-1.0
+Lista,Salamanca,1.0,0.0,-1.0,-1.0,-1.0,0.0,-1.0,-2.0
+Goya,Salamanca,0.0,1.0,-1.0,-1.0,-1.0,0.0,-1.0,-2.0
+Cortes,Centro,1.0,0.0,-1.0,-1.0,-1.0,0.0,-2.0,-1.0
+San Juan Bautista,Ciudad Lineal,2.0,0.0,-1.0,-1.0,-1.0,1.0,-2.0,-1.0
+Aravaca,Moncloa - Aravaca,0.0,1.0,0.0,0.0,-1.0,0.0,-1.0,0.0
+San Isidro,Carabanchel,1.0,0.0,-2.0,-1.0,-1.0,0.0,-3.0,-1.0
+Justicia,Centro,0.0,0.0,-2.0,-1.0,-1.0,0.0,-2.0,-1.0
+Piovera,Hortaleza,1.0,1.0,-1.0,-1.0,-1.0,0.0,-2.0,0.0
+Imperial,Arganzuela,0.0,1.0,-1.0,-1.0,-1.0,1.0,-1.0,-1.0
+Pinar del Rey,Hortaleza,1.0,0.0,-2.0,-1.0,-1.0,0.0,-2.0,0.0
+Gaztambide,Chamberí,0.0,0.0,-1.0,0.0,-1.0,0.0,-1.0,0.0
+Timón,Barajas,0.0,1.0,-2.0,-1.0,-1.0,1.0,-2.0,-1.0
+Cuatro Caminos,Tetuán,1.0,1.0,0.0,-1.0,-1.0,0.0,-1.0,0.0
+Alameda de Osuna,Barajas,0.0,1.0,-2.0,-1.0,-1.0,1.0,-2.0,-1.0
+Rios Rosas,Chamberí,1.0,0.0,0.0,0.0,-1.0,0.0,-1.0,0.0
+Bellas Vistas,Tetuán,1.0,0.0,-1.0,-1.0,-1.0,0.0,-1.0,0.0
+Canillejas,San Blas - Canillejas,0.0,1.0,0.0,0.0,-2.0,1.0,-2.0,-1.0
+Guindalera,Salamanca,0.0,0.0,-2.0,-1.0,-1.0,0.0,-1.0,-2.0
+Castilla,Chamartín,2.0,0.0,0.0,-1.0,-1.0,1.0,-1.0,-1.0
+Rejas,San Blas - Canillejas,1.0,1.0,0.0,-1.0,-2.0,1.0,-2.0,-1.0
+Simancas,San Blas - Canillejas,0.0,1.0,-1.0,-1.0,-2.0,1.0,-2.0,-1.0
+El Goloso,Fuencarral - El Pardo,0.0,0.0,0.0,-3.0,-1.0,-1.0,-1.0,-1.0
+Arapiles,Chamberí,0.0,1.0,0.0,0.0,-1.0,0.0,-1.0,0.0
+Chopera,Arganzuela,1.0,1.0,0.0,-1.0,-1.0,1.0,-1.0,-1.0
+Pacífico,Retiro,1.0,0.0,-1.0,-1.0,-1.0,1.0,-1.0,-1.0
+Valdemarín,Moncloa - Aravaca,1.0,1.0,0.0,-1.0,-1.0,0.0,-1.0,0.0
+Hispanoamérica,Chamartín,1.0,0.0,-1.0,-1.0,-1.0,1.0,-1.0,-1.0
+Los Jerónimos,Retiro,2.0,0.0,0.0,-1.0,-1.0,1.0,-1.0,-1.0
+El Plantío,Moncloa - Aravaca,1.0,1.0,0.0,-1.0,-1.0,0.0,-1.0,0.0
+Valdezarza,Moncloa - Aravaca,0.0,1.0,-1.0,-1.0,-1.0,0.0,-1.0,0.0
+Buenavista,Carabanchel,1.0,0.0,-2.0,-1.0,-1.0,0.0,-3.0,-1.0
+Ciudad Jardín,Chamartín,2.0,0.0,0.0,-1.0,-1.0,1.0,-1.0,-1.0
+Argüelles,Moncloa - Aravaca,0.0,2.0,0.0,-1.0,-1.0,0.0,-1.0,0.0
+Fontarrón,Moratalaz,1.0,0.0,-2.0,-1.0,-1.0,0.0,-2.0,-2.0
+Salvador,San Blas - Canillejas,0.0,1.0,0.0,-2.0,-2.0,1.0,-2.0,-1.0
+Rosas,San Blas - Canillejas,1.0,1.0,0.0,-1.0,-2.0,1.0,-2.0,-1.0
+Corralejos,Barajas,1.0,1.0,-1.0,-1.0,-1.0,1.0,-2.0,-1.0
+Estrella,Retiro,2.0,0.0,0.0,-1.0,-1.0,1.0,-1.0,-1.0
+Embajadores,Centro,0.0,1.0,-1.0,-1.0,-1.0,0.0,-2.0,-1.0
+Fuente del Berro,Salamanca,1.0,0.0,-1.0,-1.0,-1.0,0.0,-1.0,-2.0
+Fuentelareina,Fuencarral - El Pardo,0.0,1.0,0.0,-2.0,-1.0,-1.0,-1.0,-1.0
+Vista Alegre,Carabanchel,0.0,0.0,-3.0,-1.0,-1.0,0.0,-3.0,-1.0
+Santa Eugenia,Villa de Vallecas,0.0,1.0,-1.0,-2.0,-1.0,-1.0,-2.0,-1.0
+Pueblo Nuevo,Ciudad Lineal,1.0,1.0,-1.0,-1.0,-1.0,1.0,-2.0,-1.0
+Palomeras Sureste,Puente de Vallecas,1.0,0.0,-2.0,-1.0,-1.0,1.0,-2.0,-1.0
+Casco Histórico de Vallecas,Villa de Vallecas,0.0,0.0,-2.0,-2.0,-1.0,-1.0,-2.0,-1.0
+Abrantes,Carabanchel,0.0,0.0,-2.0,0.0,-1.0,0.0,-3.0,-1.0
+Castillejos,Tetuán,2.0,0.0,0.0,-1.0,-1.0,0.0,-1.0,0.0
+Palomas,Hortaleza,1.0,0.0,-2.0,-1.0,-1.0,0.0,-2.0,0.0
+Mirasierra,Fuencarral - El Pardo,0.0,0.0,0.0,-1.0,-1.0,-1.0,-1.0,-1.0
+Moscardó,Usera,1.0,1.0,-1.0,-1.0,-1.0,1.0,-2.0,-1.0
+Almenara,Tetuán,1.0,0.0,-1.0,-1.0,-1.0,0.0,-1.0,0.0
+Horcajo,Moratalaz,0.0,1.0,-2.0,-1.0,-1.0,0.0,-2.0,-2.0
+Casa de Campo,Moncloa - Aravaca,0.0,1.0,-1.0,-1.0,-1.0,0.0,-1.0,0.0
+Los Angeles,Villaverde,1.0,0.0,-1.0,0.0,-1.0,0.0,-2.0,0.0
+Valdeacederas,Tetuán,2.0,0.0,0.0,-1.0,-1.0,0.0,-1.0,0.0
+Marroquina,Moratalaz,1.0,0.0,-2.0,-1.0,-1.0,0.0,-2.0,-2.0
+San Andrés,Villaverde,0.0,0.0,-2.0,0.0,-1.0,0.0,-2.0,0.0
+Concepción,Ciudad Lineal,1.0,0.0,-2.0,-1.0,-1.0,1.0,-2.0,-1.0
+Ciudad Universitaria,Moncloa - Aravaca,1.0,1.0,0.0,-1.0,-1.0,0.0,-1.0,0.0
+San Pascual,Ciudad Lineal,2.0,0.0,-1.0,-1.0,-1.0,1.0,-2.0,-1.0
+Canillas,Hortaleza,2.0,0.0,-1.0,-1.0,-1.0,0.0,-2.0,0.0
+Puerta del Angel,Latina,0.0,1.0,-1.0,-1.0,-2.0,0.0,-3.0,-1.0
+Ventas,Ciudad Lineal,1.0,0.0,-2.0,-1.0,-1.0,1.0,-2.0,-1.0
+Berruguete,Tetuán,2.0,0.0,0.0,-1.0,-1.0,0.0,-1.0,0.0
+Quintana,Ciudad Lineal,2.0,0.0,-1.0,-1.0,-1.0,1.0,-2.0,-1.0
+Los Rosales,Villaverde,0.0,0.0,-2.0,0.0,-1.0,0.0,-2.0,0.0
+Costillares,Ciudad Lineal,1.0,1.0,-1.0,-1.0,-1.0,1.0,-2.0,-1.0
+Aguilas,Latina,0.0,0.0,-1.0,0.0,-2.0,0.0,-3.0,-1.0
+Aluche,Latina,0.0,0.0,-2.0,-1.0,-2.0,0.0,-3.0,-1.0
+Opañel,Carabanchel,0.0,1.0,-2.0,-1.0,-1.0,0.0,-3.0,-1.0
+Numancia,Puente de Vallecas,2.0,0.0,-1.0,-1.0,-1.0,1.0,-2.0,-1.0
+Arcos,San Blas - Canillejas,0.0,1.0,-1.0,-1.0,-2.0,1.0,-2.0,-1.0
+Cármenes,Latina,0.0,0.0,-2.0,-1.0,-2.0,0.0,-3.0,-1.0
+Almendrales,Usera,0.0,1.0,-2.0,-1.0,-1.0,1.0,-2.0,-1.0
+Comillas,Carabanchel,0.0,0.0,-3.0,-1.0,-1.0,0.0,-3.0,-1.0
+Pradolongo,Usera,0.0,1.0,-1.0,0.0,-1.0,1.0,-2.0,-1.0
+Acacias,Arganzuela,0.0,2.0,0.0,-1.0,-1.0,1.0,-1.0,-1.0
+Palos de Moguer,Arganzuela,1.0,1.0,0.0,-1.0,-1.0,1.0,-1.0,-1.0
+Legazpi,Arganzuela,0.0,1.0,-1.0,-1.0,-1.0,1.0,-1.0,-1.0
+Orcasur,Usera,0.0,2.0,-1.0,-1.0,-1.0,1.0,-2.0,-1.0
+Puerta Bonita,Carabanchel,1.0,0.0,-2.0,-1.0,-1.0,0.0,-3.0,-1.0
+Atalaya,Ciudad Lineal,1.0,0.0,-1.0,-2.0,-1.0,1.0,-2.0,-1.0
+Niño Jesús,Retiro,2.0,0.0,0.0,-1.0,-1.0,1.0,-1.0,-1.0
+Valverde,Fuencarral - El Pardo,1.0,0.0,0.0,-2.0,-1.0,-1.0,-1.0,-1.0
+El Pilar,Fuencarral - El Pardo,0.0,0.0,-1.0,-2.0,-1.0,-1.0,-1.0,-1.0
+Lucero,Latina,1.0,0.0,-1.0,-1.0,-2.0,0.0,-3.0,-1.0
+El Pardo,Fuencarral - El Pardo,0.0,0.0,-1.0,-2.0,-1.0,-1.0,-1.0,-1.0
+Media Legua,Moratalaz,0.0,0.0,-3.0,-1.0,-1.0,0.0,-2.0,-2.0
+Pavones,Moratalaz,0.0,0.0,-3.0,-1.0,-1.0,0.0,-2.0,-2.0
+Palomeras Bajas,Puente de Vallecas,2.0,0.0,-1.0,-1.0,-1.0,1.0,-2.0,-1.0
+Casco Histórico de Vicálvaro,Vicálvaro,0.0,1.0,-2.0,-1.0,-1.0,0.0,-2.0,0.0
+San Diego,Puente de Vallecas,1.0,1.0,-1.0,-1.0,-1.0,1.0,-2.0,-1.0
+Campamento,Latina,1.0,0.0,-1.0,-1.0,-2.0,0.0,-3.0,-1.0
+Adelfas,Retiro,1.0,1.0,0.0,-1.0,-1.0,1.0,-1.0,-1.0
+Hellín,San Blas - Canillejas,0.0,2.0,0.0,-1.0,-2.0,1.0,-2.0,-1.0
+Casco Histórico de Barajas,Barajas,1.0,1.0,-1.0,-1.0,-1.0,1.0,-2.0,-1.0
+Butarque,Villaverde,1.0,0.0,-1.0,0.0,-1.0,0.0,-2.0,0.0
+Colina,Ciudad Lineal,1.0,0.0,-1.0,0.0,-1.0,1.0,-2.0,-1.0
+Portazgo,Puente de Vallecas,2.0,0.0,-1.0,-1.0,-1.0,1.0,-2.0,-1.0
+San Cristobal,Villaverde,0.0,1.0,-1.0,0.0,-1.0,0.0,-2.0,0.0
+Amposta,San Blas - Canillejas,1.0,1.0,0.0,-1.0,-2.0,1.0,-2.0,-1.0
+Zofío,Usera,1.0,1.0,-1.0,-1.0,-1.0,1.0,-2.0,-1.0
+Apostol Santiago,Hortaleza,2.0,0.0,-1.0,-1.0,-1.0,0.0,-2.0,0.0
+Entrevías,Puente de Vallecas,1.0,0.0,-2.0,-1.0,-1.0,1.0,-2.0,-1.0
+Orcasitas,Usera,0.0,1.0,-2.0,-1.0,-1.0,1.0,-2.0,-1.0
+Atocha,Arganzuela,0.0,1.0,0.0,0.0,-1.0,1.0,-1.0,-1.0
+Ambroz,Vicálvaro,0.0,2.0,-1.0,-1.0,-1.0,0.0,-2.0,0.0
+Cuatro Vientos,Latina,1.0,0.0,-1.0,-1.0,-2.0,0.0,-3.0,-1.0
+Vinateros,Moratalaz,1.0,0.0,-2.0,-1.0,-1.0,0.0,-2.0,-2.0
+Aeropuerto,Barajas,0.0,2.0,-1.0,-1.0,-1.0,1.0,-2.0,-1.0
