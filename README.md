@@ -6,7 +6,7 @@
 
 Este repositorio contiene el proyecto Data Science que se ha desarrollado aplicando diferentes técnicas aprendidas en el **Data Science Bootcamp de The Bridge**.
 
-El proyecto está centrado en el análisis y predicción del precio de viviendas en venta de Madrid, estudiando diversas variables relacionadas con la venta de bienes inmuebles extraídas de datos obtenidos del portal inmobiliario Idealista.
+El proyecto está centrado en el análisis y predicción del precio de viviendas en venta de Madrid, estudiando diversas variables relacionadas con la venta de bienes inmuebles extraídas de datos obtenidos del **portal inmobiliario Idealista**.
 
 El conjunto de datos utilizado contiene una coordenada geográfica por cada vivienda, lo que ha permitido combinar herramientas de análisis **GIS (sistema de información geográfica)** con las herramientas de Data Science.
 
