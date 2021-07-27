@@ -5,6 +5,9 @@ import json
 import os
 import requests
 from requests.auth import HTTPBasicAuth
+import urllib.request
+from bs4 import BeautifulSoup
+from math import sin, cos, sqrt, atan2, radians
 
 import numpy as np
 import pandas as pd
@@ -28,7 +31,7 @@ class Idealista:
     def __init__(self, debug = False):
         '''
         Constructor
-        Input:
+        Parametros:
             debug: si vale True muestra mensajes de debug
         '''
         self.__debug = debug
@@ -236,7 +239,7 @@ class IdealistaFeatureEngineering:
     def __init__(self, debug = False):
         '''
         Constructor
-        Input:
+        Parametros:
             debug: si vale True muestra mensajes de debug
         '''
         self.__debug = debug
@@ -431,3 +434,190 @@ class IdealistaML:
         plt.show()
         
         return correlation
+
+class IdealistaWebScraping:
+    '''
+    Clase con métodos para obtener información de un anuncio del portal Idealista usando Web Scraping.
+    '''
+
+    ''' 
+    Coordenada del centro de la ciudad de Madrid (Puerta del Sol)
+    '''
+    longitudCentro = -3.703834
+    latitudCentro = 40.416639
+
+    def __init__(self, debug = False):
+        '''
+        Constructor
+        Parametros:
+            debug: si vale True muestra mensajes de debug
+        '''
+        self.__debug = debug
+
+    def get_idealista_advertisement(self, url):
+        '''
+        Descarga una página del portal de Idealista.
+        
+        Parametros:
+        * url: url de la página web del portal de Idealista
+        Resultado:
+        * Html de la página web descargada
+        '''
+        headers = {
+            'authority': "www.idealista.com",
+            'cache-control': "max-age=0",
+            'upgrade-insecure-requests': "1",
+            'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36",
+            'accept': "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+            'sec-fetch-site': "none",
+            'sec-fetch-mode': "navigate",
+            'sec-fetch-user': "?1",
+            'sec-fetch-dest': "document",
+            'accept-language': "en-US,en;q=0.9"
+        }
+
+        '''
+        headers={
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36'
+        }
+        '''
+
+        req = urllib.request.Request(
+            url, 
+            data=None, 
+            headers=headers
+        )
+
+        html =  urllib.request.urlopen(req)
+
+        return html
+    
+    def distance(self, longitud1, latitud1, longitud2, latitud2):
+        '''
+        Calcula la distancia en metros entre 2 coordenadas longitud/latitud.
+        
+        Parametros:
+        * longitud1, latitud1: coordenada 1
+        * longitud2, latitud2: coordenada 2
+        Resultado:
+        * Distancia en metros
+        '''
+        # approximate radius of earth in km
+        R = 6373.0
+
+        lat1 = radians(latitud1)
+        lon1 = radians(longitud1)
+        lat2 = radians(latitud2)
+        lon2 = radians(longitud2)
+
+        dlon = lon2 - lon1
+        dlat = lat2 - lat1
+
+        a = sin(dlat / 2)**2 + cos(lat1) * cos(lat2) * sin(dlon / 2)**2
+        c = 2 * atan2(sqrt(a), sqrt(1 - a))
+
+        distance = R * c * 1000
+
+        return distance
+
+    def extract_advertisement_info(self, html, size_index):
+        '''
+        Extrae del html de un anuncio de venta de vivienda de Idealista la siguietne información:
+        price, size, rooms, bathrooms, priceByArea, barrio y distrito.
+
+        Parametros:
+        * html: html del anuncio de venta de vivienda de Idealista
+        * size_index: índice dentro de una lista de características de la vivienda donde se encuentra el taaño del piso.
+        Resultado:
+        * Diccionario con price, size, rooms, bathrooms, priceByArea, barrio y distrito.
+        '''
+        info = {}
+
+        soup = BeautifulSoup(html)
+        price = soup.find_all("span", class_ = "info-data-price")
+        price = int(price[0].contents[0].contents[0].replace('.',''))
+        info["price"] = price
+        print("Precio:", info["price"])
+
+        detalles_vivienda = soup.find_all("div", class_ = "details-property_features")
+        type(detalles_vivienda)
+        detalles_vivienda = detalles_vivienda[0].find_all("li")
+        size = detalles_vivienda[size_index].contents[0]
+        size = float(size[:size.index(" ")])
+        info["size"] = size
+        print("Tamaño:", info["size"])
+        rooms = detalles_vivienda[size_index + 1].contents[0]
+        rooms = float(rooms[:rooms.index(" ")])
+        info["rooms"] = rooms
+        print("Habitaciones:", info["rooms"])
+        bathrooms = detalles_vivienda[size_index + 2].contents[0]
+        bathrooms = float(bathrooms[:bathrooms.index(" ")])
+        info["bathrooms"] = bathrooms
+        print("Baños:", info["bathrooms"])
+
+        priceByArea = soup.find_all("p", class_ = "flex-feature squaredmeterprice")
+        #display(priceByArea)
+        priceByArea = priceByArea[0].find_all("span")[1].contents[0]
+        priceByArea = int(priceByArea[:priceByArea.index(" ")].replace('.',''))
+        info["priceByArea"] = priceByArea
+        print("Precio por metro cuadrado:", info["priceByArea"])
+
+        ubicacion = soup.find_all(id='headerMap')
+        ubicacion = ubicacion[0].find_all("li")
+        barrio = ubicacion[1].contents[0]
+        barrio = str(barrio.encode('utf-8')).replace('\\n','').replace('Barrio','').replace(' ','')
+        info["barrio"] = barrio
+        print("Barrio:", info["barrio"])
+        distrito = ubicacion[2].contents[0]
+        distrito = str(distrito.encode('utf-8')).replace('\\n','').replace('Distrito','').replace(' ','')
+        info["distrito"] = distrito
+        print("Distrito:", info["distrito"])
+
+        return info
+
+    def create_info_vivienda(self, info):
+        '''
+        Dado un diccionario con las variables de una nueva vinienda, devuelve otro diccionario con las variables
+        en el orden esperado por el modelo de Machine Learning y Deep Learning de este proyecto.
+        
+        Parametros:
+        * info: Diccionario de entrada.
+        Resultado:
+        * Diccionario ordenado
+        '''
+        
+        infoVivenda = {
+            "price": None,
+            "exterior": None,
+            "distance": None,
+            "size": None,
+            "rooms": None,
+            "priceByArea": None,
+            "propertyType_flat": None,
+            "latitude": None,
+            "coddistrit_1": None,
+            "bathrooms": None,
+            "coddistrit_2": None,
+            "propertyType_chalet": None,
+            "codbar_3": None,
+            "codbar_5": None,
+            "hasParkingSpace": None
+        }
+
+        infoVivenda["price"] = info["price"]
+        infoVivenda["exterior"] = info["exterior"]
+        infoVivenda["distance"] = info["distance"]
+        infoVivenda["size"] = info["size"]
+        infoVivenda["rooms"] = info["rooms"]
+        infoVivenda["priceByArea"] = info["priceByArea"]
+        infoVivenda["propertyType_flat"] = info["propertyType_flat"]
+        infoVivenda["latitude"] = info["latitude"]
+        infoVivenda["coddistrit_1"] = info["coddistrit_1"]
+        infoVivenda["bathrooms"] = info["bathrooms"]
+        infoVivenda["coddistrit_2"] = info["coddistrit_2"]
+        infoVivenda["propertyType_chalet"] = info["propertyType_chalet"]
+        infoVivenda["codbar_3"] = info["codbar_3"]
+        infoVivenda["codbar_5"] = info["codbar_5"]
+        infoVivenda["hasParkingSpace"] = info["hasParkingSpace"]
+
+        return infoVivenda
