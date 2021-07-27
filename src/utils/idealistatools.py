@@ -537,7 +537,8 @@ class IdealistaWebScraping:
         price = soup.find_all("span", class_ = "info-data-price")
         price = int(price[0].contents[0].contents[0].replace('.',''))
         info["price"] = price
-        print("Precio:", info["price"])
+        if self.__debug:
+            print("Precio:", info["price"])
 
         detalles_vivienda = soup.find_all("div", class_ = "details-property_features")
         type(detalles_vivienda)
@@ -545,33 +546,39 @@ class IdealistaWebScraping:
         size = detalles_vivienda[size_index].contents[0]
         size = float(size[:size.index(" ")])
         info["size"] = size
-        print("Tamaño:", info["size"])
+        if self.__debug:
+            print("Tamaño:", info["size"])
         rooms = detalles_vivienda[size_index + 1].contents[0]
         rooms = float(rooms[:rooms.index(" ")])
         info["rooms"] = rooms
-        print("Habitaciones:", info["rooms"])
+        if self.__debug:
+            print("Habitaciones:", info["rooms"])
         bathrooms = detalles_vivienda[size_index + 2].contents[0]
         bathrooms = float(bathrooms[:bathrooms.index(" ")])
         info["bathrooms"] = bathrooms
-        print("Baños:", info["bathrooms"])
+        if self.__debug:
+            print("Baños:", info["bathrooms"])
 
         priceByArea = soup.find_all("p", class_ = "flex-feature squaredmeterprice")
         #display(priceByArea)
         priceByArea = priceByArea[0].find_all("span")[1].contents[0]
         priceByArea = int(priceByArea[:priceByArea.index(" ")].replace('.',''))
         info["priceByArea"] = priceByArea
-        print("Precio por metro cuadrado:", info["priceByArea"])
+        if self.__debug:
+            print("Precio por metro cuadrado:", info["priceByArea"])
 
         ubicacion = soup.find_all(id='headerMap')
         ubicacion = ubicacion[0].find_all("li")
         barrio = ubicacion[1].contents[0]
         barrio = str(barrio.encode('utf-8')).replace('\\n','').replace('Barrio','').replace(' ','')
         info["barrio"] = barrio
-        print("Barrio:", info["barrio"])
+        if self.__debug:
+            print("Barrio:", info["barrio"])
         distrito = ubicacion[2].contents[0]
         distrito = str(distrito.encode('utf-8')).replace('\\n','').replace('Distrito','').replace(' ','')
         info["distrito"] = distrito
-        print("Distrito:", info["distrito"])
+        if self.__debug:
+            print("Distrito:", info["distrito"])
 
         return info
 
