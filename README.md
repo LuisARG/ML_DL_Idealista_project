@@ -10,7 +10,7 @@ El proyecto está centrado en el análisis y predicción del precio de viviendas
 
 El conjunto de datos utilizado contiene una coordenada geográfica por cada vivienda, lo que ha permitido combinar herramientas de análisis **GIS (sistema de información geográfica)** con las herramientas de Data Science.
 
-El siguiente [Story Map](https://storymaps.arcgis.com/stories/6cc01a1558154305aa16e974cd669584) contiene descripción más detallada del proyecto.
+El siguiente [Story Map](https://storymaps.arcgis.com/stories/6cc01a1558154305aa16e974cd669584) contiene una descripción más detallada del proyecto.
 
 <a id="proyecto"></a><h2 style='background:#C9FF35; border:0; color:black; padding-top:10px; padding-bottom:10px; padding-left:20px'>Estructura del proyecto</h2>
 
