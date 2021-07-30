@@ -18,7 +18,7 @@ El proyecto tiene la siguiente estructura de carpetas:
 - **src**: carpeta con todo el código
 - **src/data**: carpeta con todos los archivos de datos utilizados en el analisis (datasets y objetos python serializados)
 - **src/images**: carpeta con imágenes utilizadas en el Story Map que describe el proyecto
-- **src/models**: fichreos con el mejor modelo de Machine Learning y el modelo Deep Learning generados en el proyecto
+- **src/models**: ficheros con el mejor modelo de Machine Learning y el modelo Deep Learning generados en el proyecto
 - **src/utils**: contiene las clases python implementadas en el proyecto
 - **src/main.ipynb**: notebook principal del proyecto
 - **src/GetDataIdealista.ipynb**: notebook que contiene el código para descargar información de la base de datos del portal inmobiliaro Idealista a través de su API
